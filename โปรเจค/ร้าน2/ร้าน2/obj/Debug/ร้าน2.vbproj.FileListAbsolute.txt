@@ -12,3 +12,18 @@ C:\Users\Nitro 5\Desktop\โปรเจค\ร้าน2\ร้าน2\obj\Debu
 C:\Users\Nitro 5\Desktop\โปรเจค\ร้าน2\ร้าน2\obj\Debug\ร้าน2.pdb
 C:\Users\Nitro 5\Desktop\โปรเจค\ร้าน2\ร้าน2\obj\Debug\ร้าน2.frm_main.resources
 C:\Users\Nitro 5\Desktop\โปรเจค\ร้าน2\ร้าน2\obj\Debug\ร้าน2.frm_mannage_coffee.resources
+C:\Users\Nitro 5\Desktop\New folder\โปรเจค\ร้าน2\ร้าน2\bin\Debug\ร้าน2.exe.config
+C:\Users\Nitro 5\Desktop\New folder\โปรเจค\ร้าน2\ร้าน2\bin\Debug\ร้าน2.exe
+C:\Users\Nitro 5\Desktop\New folder\โปรเจค\ร้าน2\ร้าน2\bin\Debug\ร้าน2.pdb
+C:\Users\Nitro 5\Desktop\New folder\โปรเจค\ร้าน2\ร้าน2\bin\Debug\ร้าน2.xml
+C:\Users\Nitro 5\Desktop\New folder\โปรเจค\ร้าน2\ร้าน2\obj\Debug\ร้าน2.vbprojAssemblyReference.cache
+C:\Users\Nitro 5\Desktop\New folder\โปรเจค\ร้าน2\ร้าน2\obj\Debug\ร้าน2.Form1.resources
+C:\Users\Nitro 5\Desktop\New folder\โปรเจค\ร้าน2\ร้าน2\obj\Debug\ร้าน2.frm_main.resources
+C:\Users\Nitro 5\Desktop\New folder\โปรเจค\ร้าน2\ร้าน2\obj\Debug\ร้าน2.frm_mannage_coffee.resources
+C:\Users\Nitro 5\Desktop\New folder\โปรเจค\ร้าน2\ร้าน2\obj\Debug\ร้าน2.Resources.resources
+C:\Users\Nitro 5\Desktop\New folder\โปรเจค\ร้าน2\ร้าน2\obj\Debug\ร้าน2.vbproj.GenerateResource.cache
+C:\Users\Nitro 5\Desktop\New folder\โปรเจค\ร้าน2\ร้าน2\obj\Debug\ร้าน2.vbproj.CoreCompileInputs.cache
+C:\Users\Nitro 5\Desktop\New folder\โปรเจค\ร้าน2\ร้าน2\obj\Debug\ร้าน2.exe
+C:\Users\Nitro 5\Desktop\New folder\โปรเจค\ร้าน2\ร้าน2\obj\Debug\ร้าน2.xml
+C:\Users\Nitro 5\Desktop\New folder\โปรเจค\ร้าน2\ร้าน2\obj\Debug\ร้าน2.pdb
+C:\Users\Nitro 5\Desktop\New folder\โปรเจค\ร้าน2\ร้าน2\obj\Debug\ร้าน2.frm_coffeeSale.resources

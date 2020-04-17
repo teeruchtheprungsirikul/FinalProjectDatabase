@@ -32,6 +32,11 @@ Module code
         Return i.ToString.PadLeft(6, "0")
 
     End Function
+
+    Friend Function cmd_excuteNonquery()
+        cmd = New SqlCommand(sql, cn)
+        Return cmd.ExecuteNonQuery
+    End Function
     Friend Sub msg_error(text As String, Optional title As String = "ผิดพลาด")
         MsgBox(text, vbCritical + vbOKOnly, title)
 
@@ -44,7 +49,5 @@ Module code
     Friend Function confirm(text As String, Optional title As String = "ยืนยัน")
         Return MsgBox(text, vbQuestion + vbYesNo, title)
     End Function
-
-
 
 End Module

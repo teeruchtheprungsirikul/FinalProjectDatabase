@@ -81,6 +81,12 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frm_coffeeSale.Designer.vb">
+      <DependentUpon>frm_coffeeSale.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_coffeeSale.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frm_main.Designer.vb">
       <DependentUpon>frm_main.vb</DependentUpon>
     </Compile>
@@ -93,6 +99,7 @@
     <Compile Include="frm_mannage_coffee.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ListView_Control.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -112,6 +119,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_coffeeSale.resx">
+      <DependentUpon>frm_coffeeSale.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_main.resx">
       <DependentUpon>frm_main.vb</DependentUpon>
@@ -167,6 +177,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\default_coffee.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
