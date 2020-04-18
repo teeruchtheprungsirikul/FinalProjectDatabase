@@ -57,6 +57,7 @@
             msg_ok("เพิ่มสำเร็จ")
             refresh_coffee()
             clear_form()
+            frm_coffeeSale.refresh__coffee()
         End If
     End Sub
 
@@ -144,6 +145,8 @@
         Else
             msg_ok("แก้ไขสำเร็จ")
             refresh_coffee()
+            txt_confirm.Text = ""
+            frm_coffeeSale.refresh__coffee()
         End If
 
     End Sub
@@ -164,9 +167,9 @@
         If cmd_excuteNonquery() = 0 Then
             msg_error("ไม่สามารถลบได้")
         Else
-            msg_ok("แก้ไขสำเร็จ")
+            msg_ok("ลบสำเร็จ")
             refresh_coffee()
-            txt_confirm.Text = ""
+            frm_coffeeSale.refresh__coffee()
         End If
     End Sub
 End Class

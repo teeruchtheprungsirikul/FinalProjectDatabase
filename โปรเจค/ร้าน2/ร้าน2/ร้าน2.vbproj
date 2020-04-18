@@ -99,6 +99,12 @@
     <Compile Include="frm_mannage_coffee.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frm_select_price.Designer.vb">
+      <DependentUpon>frm_select_price.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_select_price.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ListView_Control.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -128,6 +134,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_mannage_coffee.resx">
       <DependentUpon>frm_mannage_coffee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_select_price.resx">
+      <DependentUpon>frm_select_price.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
