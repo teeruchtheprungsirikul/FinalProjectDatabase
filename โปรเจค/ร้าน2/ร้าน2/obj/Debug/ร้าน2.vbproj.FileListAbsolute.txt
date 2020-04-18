@@ -42,3 +42,4 @@ C:\Users\Nitro 5\Desktop\NitroSense V3.01.3001_MSFT SIGNED_20180918\FinalProject
 C:\Users\Nitro 5\Desktop\NitroSense V3.01.3001_MSFT SIGNED_20180918\FinalProjectDatabase\โปรเจค\ร้าน2\ร้าน2\obj\Debug\ร้าน2.exe
 C:\Users\Nitro 5\Desktop\NitroSense V3.01.3001_MSFT SIGNED_20180918\FinalProjectDatabase\โปรเจค\ร้าน2\ร้าน2\obj\Debug\ร้าน2.xml
 C:\Users\Nitro 5\Desktop\NitroSense V3.01.3001_MSFT SIGNED_20180918\FinalProjectDatabase\โปรเจค\ร้าน2\ร้าน2\obj\Debug\ร้าน2.pdb
+C:\Users\Nitro 5\Desktop\NitroSense V3.01.3001_MSFT SIGNED_20180918\FinalProjectDatabase\โปรเจค\ร้าน2\ร้าน2\obj\Debug\ร้าน2.frm_select_price.resources
