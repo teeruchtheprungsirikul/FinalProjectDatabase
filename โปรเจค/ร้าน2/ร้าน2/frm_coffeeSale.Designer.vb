@@ -27,10 +27,10 @@ Partial Class frm_coffeeSale
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txt_search = New System.Windows.Forms.TextBox()
-        Me.listview_coffee = New System.Windows.Forms.ListView()
+        Me.lbl_sale_id = New System.Windows.Forms.ListView()
         Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.btn_purchase = New System.Windows.Forms.Button()
         Me.btn_delete_all = New System.Windows.Forms.Button()
         Me.btn_select_delete = New System.Windows.Forms.Button()
         Me.listview_sale = New System.Windows.Forms.ListView()
@@ -42,6 +42,10 @@ Partial Class frm_coffeeSale
         Me.ColumnHeader13 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader14 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.lbl_date_sale = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.btn_add = New System.Windows.Forms.Button()
         Me.rad_cool = New System.Windows.Forms.RadioButton()
         Me.rad_spin = New System.Windows.Forms.RadioButton()
@@ -60,11 +64,11 @@ Partial Class frm_coffeeSale
         'Panel1
         '
         Me.Panel1.Controls.Add(Me.Panel2)
-        Me.Panel1.Controls.Add(Me.listview_coffee)
+        Me.Panel1.Controls.Add(Me.lbl_sale_id)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel1.Location = New System.Drawing.Point(650, 0)
+        Me.Panel1.Location = New System.Drawing.Point(660, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(498, 684)
+        Me.Panel1.Size = New System.Drawing.Size(498, 738)
         Me.Panel1.TabIndex = 0
         '
         'Panel2
@@ -95,15 +99,15 @@ Partial Class frm_coffeeSale
         Me.txt_search.Size = New System.Drawing.Size(369, 40)
         Me.txt_search.TabIndex = 0
         '
-        'listview_coffee
+        'lbl_sale_id
         '
-        Me.listview_coffee.HideSelection = False
-        Me.listview_coffee.LargeImageList = Me.ImageList1
-        Me.listview_coffee.Location = New System.Drawing.Point(3, 65)
-        Me.listview_coffee.Name = "listview_coffee"
-        Me.listview_coffee.Size = New System.Drawing.Size(495, 580)
-        Me.listview_coffee.TabIndex = 0
-        Me.listview_coffee.UseCompatibleStateImageBehavior = False
+        Me.lbl_sale_id.HideSelection = False
+        Me.lbl_sale_id.LargeImageList = Me.ImageList1
+        Me.lbl_sale_id.Location = New System.Drawing.Point(3, 65)
+        Me.lbl_sale_id.Name = "lbl_sale_id"
+        Me.lbl_sale_id.Size = New System.Drawing.Size(495, 580)
+        Me.lbl_sale_id.TabIndex = 0
+        Me.lbl_sale_id.UseCompatibleStateImageBehavior = False
         '
         'ImageList1
         '
@@ -113,7 +117,7 @@ Partial Class frm_coffeeSale
         '
         'Panel3
         '
-        Me.Panel3.Controls.Add(Me.Button3)
+        Me.Panel3.Controls.Add(Me.btn_purchase)
         Me.Panel3.Controls.Add(Me.btn_delete_all)
         Me.Panel3.Controls.Add(Me.btn_select_delete)
         Me.Panel3.Controls.Add(Me.listview_sale)
@@ -121,21 +125,21 @@ Partial Class frm_coffeeSale
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel3.Location = New System.Drawing.Point(0, 0)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(650, 684)
+        Me.Panel3.Size = New System.Drawing.Size(660, 738)
         Me.Panel3.TabIndex = 1
         '
-        'Button3
+        'btn_purchase
         '
-        Me.Button3.Location = New System.Drawing.Point(536, 642)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(94, 26)
-        Me.Button3.TabIndex = 4
-        Me.Button3.Text = "คิดเงิน"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btn_purchase.Location = New System.Drawing.Point(547, 689)
+        Me.btn_purchase.Name = "btn_purchase"
+        Me.btn_purchase.Size = New System.Drawing.Size(94, 26)
+        Me.btn_purchase.TabIndex = 4
+        Me.btn_purchase.Text = "คิดเงิน"
+        Me.btn_purchase.UseVisualStyleBackColor = True
         '
         'btn_delete_all
         '
-        Me.btn_delete_all.Location = New System.Drawing.Point(131, 642)
+        Me.btn_delete_all.Location = New System.Drawing.Point(130, 689)
         Me.btn_delete_all.Name = "btn_delete_all"
         Me.btn_delete_all.Size = New System.Drawing.Size(94, 26)
         Me.btn_delete_all.TabIndex = 3
@@ -144,7 +148,7 @@ Partial Class frm_coffeeSale
         '
         'btn_select_delete
         '
-        Me.btn_select_delete.Location = New System.Drawing.Point(12, 642)
+        Me.btn_select_delete.Location = New System.Drawing.Point(11, 689)
         Me.btn_select_delete.Name = "btn_select_delete"
         Me.btn_select_delete.Size = New System.Drawing.Size(94, 26)
         Me.btn_select_delete.TabIndex = 2
@@ -157,7 +161,7 @@ Partial Class frm_coffeeSale
         Me.listview_sale.FullRowSelect = True
         Me.listview_sale.GridLines = True
         Me.listview_sale.HideSelection = False
-        Me.listview_sale.Location = New System.Drawing.Point(1, 151)
+        Me.listview_sale.Location = New System.Drawing.Point(3, 198)
         Me.listview_sale.Name = "listview_sale"
         Me.listview_sale.Size = New System.Drawing.Size(647, 485)
         Me.listview_sale.TabIndex = 1
@@ -203,6 +207,10 @@ Partial Class frm_coffeeSale
         'Panel4
         '
         Me.Panel4.BackColor = System.Drawing.Color.White
+        Me.Panel4.Controls.Add(Me.Label5)
+        Me.Panel4.Controls.Add(Me.lbl_date_sale)
+        Me.Panel4.Controls.Add(Me.Label6)
+        Me.Panel4.Controls.Add(Me.Label4)
         Me.Panel4.Controls.Add(Me.btn_add)
         Me.Panel4.Controls.Add(Me.rad_cool)
         Me.Panel4.Controls.Add(Me.rad_spin)
@@ -216,8 +224,48 @@ Partial Class frm_coffeeSale
         Me.Panel4.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.Panel4.Location = New System.Drawing.Point(0, 0)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(650, 145)
+        Me.Panel4.Size = New System.Drawing.Size(660, 192)
         Me.Panel4.TabIndex = 0
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.Label5.Location = New System.Drawing.Point(115, 142)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(28, 24)
+        Me.Label5.TabIndex = 13
+        Me.Label5.Text = "..."
+        '
+        'lbl_date_sale
+        '
+        Me.lbl_date_sale.AutoSize = True
+        Me.lbl_date_sale.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.lbl_date_sale.Location = New System.Drawing.Point(464, 142)
+        Me.lbl_date_sale.Name = "lbl_date_sale"
+        Me.lbl_date_sale.Size = New System.Drawing.Size(28, 24)
+        Me.lbl_date_sale.TabIndex = 12
+        Me.lbl_date_sale.Text = "..."
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.Label6.Location = New System.Drawing.Point(309, 142)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(149, 24)
+        Me.Label6.TabIndex = 11
+        Me.Label6.Text = "วัน/เดือน/ปี ที่ขาย"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.Label4.Location = New System.Drawing.Point(7, 142)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(102, 24)
+        Me.Label4.TabIndex = 9
+        Me.Label4.Text = "รหัสการขาย"
         '
         'btn_add
         '
@@ -307,7 +355,7 @@ Partial Class frm_coffeeSale
         Me.txt_total.Font = New System.Drawing.Font("Microsoft Sans Serif", 48.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.txt_total.Location = New System.Drawing.Point(0, 0)
         Me.txt_total.Name = "txt_total"
-        Me.txt_total.Size = New System.Drawing.Size(650, 80)
+        Me.txt_total.Size = New System.Drawing.Size(660, 80)
         Me.txt_total.TabIndex = 0
         Me.txt_total.Text = "0.00"
         Me.txt_total.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -316,7 +364,7 @@ Partial Class frm_coffeeSale
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1148, 684)
+        Me.ClientSize = New System.Drawing.Size(1158, 738)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "frm_coffeeSale"
@@ -335,11 +383,11 @@ Partial Class frm_coffeeSale
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Label1 As Label
     Friend WithEvents txt_search As TextBox
-    Friend WithEvents listview_coffee As ListView
+    Friend WithEvents lbl_sale_id As ListView
     Friend WithEvents Panel3 As Panel
     Friend WithEvents Panel4 As Panel
     Friend WithEvents txt_total As TextBox
-    Friend WithEvents Button3 As Button
+    Friend WithEvents btn_purchase As Button
     Friend WithEvents btn_delete_all As Button
     Friend WithEvents btn_select_delete As Button
     Friend WithEvents Label2 As Label
@@ -359,4 +407,8 @@ Partial Class frm_coffeeSale
     Friend WithEvents txt_coffee_amount As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents ImageList1 As ImageList
+    Friend WithEvents lbl_date_sale As Label
+    Friend WithEvents Label6 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label5 As Label
 End Class

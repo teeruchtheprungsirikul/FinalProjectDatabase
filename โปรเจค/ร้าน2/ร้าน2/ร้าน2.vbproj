@@ -105,6 +105,18 @@
     <Compile Include="frm_select_price.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frm_total.Designer.vb">
+      <DependentUpon>frm_total.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_total.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_users.Designer.vb">
+      <DependentUpon>frm_users.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_users.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ListView_Control.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -137,6 +149,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_select_price.resx">
       <DependentUpon>frm_select_price.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_total.resx">
+      <DependentUpon>frm_total.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_users.resx">
+      <DependentUpon>frm_users.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

@@ -36,6 +36,7 @@ Partial Class frm_select_price
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.txt_amount = New System.Windows.Forms.TextBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'rad_hot
@@ -107,9 +108,9 @@ Partial Class frm_select_price
         'btn_select
         '
         Me.btn_select.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.btn_select.Location = New System.Drawing.Point(86, 392)
+        Me.btn_select.Location = New System.Drawing.Point(12, 384)
         Me.btn_select.Name = "btn_select"
-        Me.btn_select.Size = New System.Drawing.Size(158, 76)
+        Me.btn_select.Size = New System.Drawing.Size(123, 67)
         Me.btn_select.TabIndex = 6
         Me.btn_select.Text = "เลือก"
         Me.btn_select.UseVisualStyleBackColor = True
@@ -175,6 +176,16 @@ Partial Class frm_select_price
         Me.txt_amount.Size = New System.Drawing.Size(108, 20)
         Me.txt_amount.TabIndex = 14
         '
+        'Button1
+        '
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.Button1.Location = New System.Drawing.Point(163, 384)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(123, 67)
+        Me.Button1.TabIndex = 15
+        Me.Button1.Text = "ปิด"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'frm_select_price
         '
         Me.AcceptButton = Me.btn_select
@@ -182,6 +193,7 @@ Partial Class frm_select_price
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(332, 489)
         Me.ControlBox = False
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.txt_amount)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
@@ -218,4 +230,5 @@ Partial Class frm_select_price
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents txt_amount As TextBox
+    Friend WithEvents Button1 As Button
 End Class

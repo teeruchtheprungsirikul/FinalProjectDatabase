@@ -50,4 +50,8 @@
     Private Sub lbl_coffee_id_Click(sender As Object, e As EventArgs) Handles lbl_coffee_id.Click
 
     End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Me.Close()
+    End Sub
 End Class

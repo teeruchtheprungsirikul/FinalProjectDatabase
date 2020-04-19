@@ -25,9 +25,7 @@ Partial Class frm_main
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
         Me.ToolStripButton6 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButton5 = New System.Windows.Forms.ToolStripButton()
-        Me.ToolStripButton4 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButton3 = New System.Windows.Forms.ToolStripButton()
-        Me.ToolStripButton2 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
         Me.ToolStripStatusLabel1 = New System.Windows.Forms.ToolStripStatusLabel()
@@ -46,10 +44,10 @@ Partial Class frm_main
         '
         'ToolStrip1
         '
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton6, Me.ToolStripButton5, Me.ToolStripButton4, Me.ToolStripButton3, Me.ToolStripButton2, Me.ToolStripButton1})
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton6, Me.ToolStripButton5, Me.ToolStripButton3, Me.ToolStripButton1})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.Size = New System.Drawing.Size(1274, 133)
+        Me.ToolStrip1.Size = New System.Drawing.Size(535, 133)
         Me.ToolStrip1.TabIndex = 1
         Me.ToolStrip1.Text = "ขายกาแฟ"
         '
@@ -75,17 +73,6 @@ Partial Class frm_main
         Me.ToolStripButton5.Text = "จัดการกาแฟ"
         Me.ToolStripButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         '
-        'ToolStripButton4
-        '
-        Me.ToolStripButton4.AutoSize = False
-        Me.ToolStripButton4.Image = Global.ร้าน2.My.Resources.Resources.computer_icons_user_customer_icon_design_png_favpng_tdM2tE2Up80A2atRArybESN4E
-        Me.ToolStripButton4.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
-        Me.ToolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripButton4.Name = "ToolStripButton4"
-        Me.ToolStripButton4.Size = New System.Drawing.Size(130, 130)
-        Me.ToolStripButton4.Text = "จัดการลูกค้า"
-        Me.ToolStripButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        '
         'ToolStripButton3
         '
         Me.ToolStripButton3.AutoSize = False
@@ -96,17 +83,6 @@ Partial Class frm_main
         Me.ToolStripButton3.Size = New System.Drawing.Size(130, 130)
         Me.ToolStripButton3.Text = "จัดการพนักงาน"
         Me.ToolStripButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        '
-        'ToolStripButton2
-        '
-        Me.ToolStripButton2.AutoSize = False
-        Me.ToolStripButton2.Image = Global.ร้าน2.My.Resources.Resources.ff
-        Me.ToolStripButton2.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
-        Me.ToolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripButton2.Name = "ToolStripButton2"
-        Me.ToolStripButton2.Size = New System.Drawing.Size(130, 130)
-        Me.ToolStripButton2.Text = "Report"
-        Me.ToolStripButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         '
         'ToolStripButton1
         '
@@ -122,9 +98,9 @@ Partial Class frm_main
         'StatusStrip1
         '
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripStatusLabel1, Me.lbl_username, Me.ToolStripStatusLabel3, Me.lbl_fullname, Me.ToolStripStatusLabel9, Me.lbl_tel, Me.ToolStripStatusLabel7, Me.lbl_email, Me.ToolStripStatusLabel5, Me.lbl_timelogin})
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 466)
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 419)
         Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(1274, 22)
+        Me.StatusStrip1.Size = New System.Drawing.Size(535, 22)
         Me.StatusStrip1.TabIndex = 2
         Me.StatusStrip1.Text = "StatusStrip1"
         '
@@ -202,7 +178,7 @@ Partial Class frm_main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1274, 488)
+        Me.ClientSize = New System.Drawing.Size(535, 441)
         Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.ToolStrip1)
         Me.IsMdiContainer = True
@@ -221,9 +197,7 @@ Partial Class frm_main
     Friend WithEvents ToolStripButton1 As ToolStripButton
     Friend WithEvents ToolStripButton6 As ToolStripButton
     Friend WithEvents ToolStripButton5 As ToolStripButton
-    Friend WithEvents ToolStripButton4 As ToolStripButton
     Friend WithEvents ToolStripButton3 As ToolStripButton
-    Friend WithEvents ToolStripButton2 As ToolStripButton
     Friend WithEvents StatusStrip1 As StatusStrip
     Friend WithEvents ToolStripStatusLabel1 As ToolStripStatusLabel
     Friend WithEvents lbl_username As ToolStripStatusLabel

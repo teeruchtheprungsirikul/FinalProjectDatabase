@@ -9,24 +9,39 @@
 
     Private Sub frm_coffeeSale_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         refresh__coffee()
+        genrate_saleID()
+        get_datenow()
 
     End Sub
 
     Public Sub total_price()
         txt_total.Text = Sum_Column_Currency(listview_sale, 6)
     End Sub
+    Public Sub get_datenow()
+        lbl_date_sale.Text = Date.Today
+    End Sub
+
+    Public Sub genrate_saleID()
+        Try
+            sql = "select max(sale_id) from sale_table"
+            Dim i As Integer = cmd_excuteScalar() + 1
+            Label5.Text = "NB-" & Date.Now.Year & "/" & i.ToString.PadLeft(5, "0")
+        Catch ex As Exception
+            Label5.Text = "NB-" & Date.Now.Year & "/00001"
+        End Try
+    End Sub
 
     Public Sub refresh__coffee()
         sql = "select coffee_id, coffee_name, coffee_image from coffee"
         Dim data_table As DataTable = cmd_excuteDataTable()
 
-        Load_Sale_item(ImageList1, listview_coffee, data_table, My.Resources.default_coffee, "coffee_image", "coffee_id", "coffee_name")
+        Load_Sale_item(ImageList1, lbl_sale_id, data_table, My.Resources.default_coffee, "coffee_image", "coffee_id", "coffee_name")
     End Sub
     Public Sub search__coffee()
         sql = String.Format("select coffee_id, coffee_name, coffee_image from coffee where coffee_id like '%{0}%' OR coffee_name like '%{0}'", txt_search.Text)
         Dim data_table As DataTable = cmd_excuteDataTable()
 
-        Load_Sale_item(ImageList1, listview_coffee, data_table, My.Resources.default_coffee, "coffee_image", "coffee_id", "coffee_name")
+        Load_Sale_item(ImageList1, lbl_sale_id, data_table, My.Resources.default_coffee, "coffee_image", "coffee_id", "coffee_name")
     End Sub
 
     Private Sub txt_search_TextChanged(sender As Object, e As EventArgs) Handles txt_search.TextChanged
@@ -39,8 +54,8 @@
         End If
     End Sub
 
-    Private Sub listview_coffee_SelectedIndexChanged(sender As Object, e As EventArgs) Handles listview_coffee.SelectedIndexChanged
-        Dim select_coffee As String = listview_coffee.FocusedItem.Text
+    Private Sub listview_coffee_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lbl_sale_id.SelectedIndexChanged
+        Dim select_coffee As String = lbl_sale_id.FocusedItem.Text
         Dim coffee_split() As String = select_coffee.Split("|")
         coffee_split(0) = coffee_split(0).ToString.Trim
 
@@ -83,7 +98,7 @@
         Dim dts As DataTable = cmd_excuteDataTable()
 
         Dim arr(7) As String
-        arr(0) = listview_coffee.Items.Count + 1
+        arr(0) = lbl_sale_id.Items.Count + 1
         arr(1) = dts.Rows(0)("coffee_id")
         arr(2) = dts.Rows(0)("coffee_name")
         arr(3) = "แก้ว"
@@ -132,5 +147,15 @@
             listview_sale.Items.Remove(listview_sale.FocusedItem)
             total_price()
         End If
+    End Sub
+
+    Private Sub btn_purchase_Click(sender As Object, e As EventArgs) Handles btn_purchase.Click
+        With frm_total
+            .txt_total.Text = txt_total.Text
+            .txt_receive.Text = ""
+            .txt_receive.Select()
+            .Show()
+            .Activate()
+        End With
     End Sub
 End Class

@@ -25,4 +25,9 @@
         frm_coffeeSale.Show()
         frm_coffeeSale.MdiParent = Me
     End Sub
+
+    Private Sub ToolStripButton3_Click(sender As Object, e As EventArgs) Handles ToolStripButton3.Click
+        frm_users.Show()
+        frm_users.MdiParent = Me
+    End Sub
 End Class
