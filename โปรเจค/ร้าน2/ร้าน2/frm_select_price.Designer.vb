@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frm_select_price
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class frm_select_price
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_select_price))
         Me.rad_hot = New System.Windows.Forms.RadioButton()
@@ -38,7 +38,6 @@ Partial Class frm_select_price
         Me.Label6 = New System.Windows.Forms.Label()
         Me.txt_amount = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'rad_hot
@@ -209,16 +208,6 @@ Partial Class frm_select_price
         Me.Button1.Text = "ปิด"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'Button2
-        '
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Image = CType(resources.GetObject("Button2.Image"), System.Drawing.Image)
-        Me.Button2.Location = New System.Drawing.Point(394, 12)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(37, 31)
-        Me.Button2.TabIndex = 16
-        Me.Button2.UseVisualStyleBackColor = True
-        '
         'frm_select_price
         '
         Me.AcceptButton = Me.btn_select
@@ -227,7 +216,6 @@ Partial Class frm_select_price
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(443, 602)
         Me.ControlBox = False
-        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.txt_amount)
         Me.Controls.Add(Me.Label6)
@@ -268,5 +256,4 @@ Partial Class frm_select_price
     Friend WithEvents Label6 As Label
     Friend WithEvents txt_amount As TextBox
     Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
 End Class
