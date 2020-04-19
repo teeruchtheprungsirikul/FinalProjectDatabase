@@ -78,4 +78,10 @@
     Private Sub lbl_security_code_DoubleClick(sender As Object, e As EventArgs) Handles lbl_security_code.DoubleClick
         lbl_security_code.Text = rnd_security_code()
     End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Application.Exit()
+
+
+    End Sub
 End Class

@@ -66,9 +66,10 @@ Partial Class frm_coffeeSale
         Me.Panel1.Controls.Add(Me.Panel2)
         Me.Panel1.Controls.Add(Me.lbl_sale_id)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel1.Location = New System.Drawing.Point(660, 0)
+        Me.Panel1.Location = New System.Drawing.Point(880, 0)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(498, 738)
+        Me.Panel1.Size = New System.Drawing.Size(664, 908)
         Me.Panel1.TabIndex = 0
         '
         'Panel2
@@ -77,35 +78,40 @@ Partial Class frm_coffeeSale
         Me.Panel2.Controls.Add(Me.txt_search)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(498, 59)
+        Me.Panel2.Size = New System.Drawing.Size(664, 73)
         Me.Panel2.TabIndex = 1
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label1.Location = New System.Drawing.Point(6, 15)
+        Me.Label1.Location = New System.Drawing.Point(8, 18)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(83, 33)
+        Me.Label1.Size = New System.Drawing.Size(104, 42)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "ค้นหา"
         '
         'txt_search
         '
         Me.txt_search.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.txt_search.Location = New System.Drawing.Point(95, 8)
+        Me.txt_search.Location = New System.Drawing.Point(127, 10)
+        Me.txt_search.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txt_search.Name = "txt_search"
-        Me.txt_search.Size = New System.Drawing.Size(369, 40)
+        Me.txt_search.Size = New System.Drawing.Size(491, 49)
         Me.txt_search.TabIndex = 0
         '
         'lbl_sale_id
         '
+        Me.lbl_sale_id.BackColor = System.Drawing.SystemColors.InactiveBorder
         Me.lbl_sale_id.HideSelection = False
         Me.lbl_sale_id.LargeImageList = Me.ImageList1
-        Me.lbl_sale_id.Location = New System.Drawing.Point(3, 65)
+        Me.lbl_sale_id.Location = New System.Drawing.Point(4, 80)
+        Me.lbl_sale_id.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.lbl_sale_id.Name = "lbl_sale_id"
-        Me.lbl_sale_id.Size = New System.Drawing.Size(495, 580)
+        Me.lbl_sale_id.Size = New System.Drawing.Size(659, 713)
         Me.lbl_sale_id.TabIndex = 0
         Me.lbl_sale_id.UseCompatibleStateImageBehavior = False
         '
@@ -124,33 +130,43 @@ Partial Class frm_coffeeSale
         Me.Panel3.Controls.Add(Me.Panel4)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel3.Location = New System.Drawing.Point(0, 0)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(660, 738)
+        Me.Panel3.Size = New System.Drawing.Size(880, 908)
         Me.Panel3.TabIndex = 1
         '
         'btn_purchase
         '
-        Me.btn_purchase.Location = New System.Drawing.Point(547, 689)
+        Me.btn_purchase.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_purchase.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_purchase.Location = New System.Drawing.Point(729, 848)
+        Me.btn_purchase.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btn_purchase.Name = "btn_purchase"
-        Me.btn_purchase.Size = New System.Drawing.Size(94, 26)
+        Me.btn_purchase.Size = New System.Drawing.Size(125, 32)
         Me.btn_purchase.TabIndex = 4
         Me.btn_purchase.Text = "คิดเงิน"
         Me.btn_purchase.UseVisualStyleBackColor = True
         '
         'btn_delete_all
         '
-        Me.btn_delete_all.Location = New System.Drawing.Point(130, 689)
+        Me.btn_delete_all.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_delete_all.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_delete_all.Location = New System.Drawing.Point(173, 848)
+        Me.btn_delete_all.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btn_delete_all.Name = "btn_delete_all"
-        Me.btn_delete_all.Size = New System.Drawing.Size(94, 26)
+        Me.btn_delete_all.Size = New System.Drawing.Size(125, 32)
         Me.btn_delete_all.TabIndex = 3
         Me.btn_delete_all.Text = "ลบทั้งหมด"
         Me.btn_delete_all.UseVisualStyleBackColor = True
         '
         'btn_select_delete
         '
-        Me.btn_select_delete.Location = New System.Drawing.Point(11, 689)
+        Me.btn_select_delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_select_delete.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_select_delete.Location = New System.Drawing.Point(15, 848)
+        Me.btn_select_delete.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btn_select_delete.Name = "btn_select_delete"
-        Me.btn_select_delete.Size = New System.Drawing.Size(94, 26)
+        Me.btn_select_delete.Size = New System.Drawing.Size(125, 32)
         Me.btn_select_delete.TabIndex = 2
         Me.btn_select_delete.Text = "ลบที่เลือก"
         Me.btn_select_delete.UseVisualStyleBackColor = True
@@ -161,9 +177,10 @@ Partial Class frm_coffeeSale
         Me.listview_sale.FullRowSelect = True
         Me.listview_sale.GridLines = True
         Me.listview_sale.HideSelection = False
-        Me.listview_sale.Location = New System.Drawing.Point(3, 198)
+        Me.listview_sale.Location = New System.Drawing.Point(4, 244)
+        Me.listview_sale.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.listview_sale.Name = "listview_sale"
-        Me.listview_sale.Size = New System.Drawing.Size(647, 485)
+        Me.listview_sale.Size = New System.Drawing.Size(861, 596)
         Me.listview_sale.TabIndex = 1
         Me.listview_sale.UseCompatibleStateImageBehavior = False
         Me.listview_sale.View = System.Windows.Forms.View.Details
@@ -206,7 +223,7 @@ Partial Class frm_coffeeSale
         '
         'Panel4
         '
-        Me.Panel4.BackColor = System.Drawing.Color.White
+        Me.Panel4.BackColor = System.Drawing.SystemColors.InactiveBorder
         Me.Panel4.Controls.Add(Me.Label5)
         Me.Panel4.Controls.Add(Me.lbl_date_sale)
         Me.Panel4.Controls.Add(Me.Label6)
@@ -223,17 +240,19 @@ Partial Class frm_coffeeSale
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel4.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.Panel4.Location = New System.Drawing.Point(0, 0)
+        Me.Panel4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(660, 192)
+        Me.Panel4.Size = New System.Drawing.Size(880, 236)
         Me.Panel4.TabIndex = 0
         '
         'Label5
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label5.Location = New System.Drawing.Point(115, 142)
+        Me.Label5.Location = New System.Drawing.Point(153, 175)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(28, 24)
+        Me.Label5.Size = New System.Drawing.Size(34, 29)
         Me.Label5.TabIndex = 13
         Me.Label5.Text = "..."
         '
@@ -241,9 +260,10 @@ Partial Class frm_coffeeSale
         '
         Me.lbl_date_sale.AutoSize = True
         Me.lbl_date_sale.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.lbl_date_sale.Location = New System.Drawing.Point(464, 142)
+        Me.lbl_date_sale.Location = New System.Drawing.Point(619, 175)
+        Me.lbl_date_sale.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lbl_date_sale.Name = "lbl_date_sale"
-        Me.lbl_date_sale.Size = New System.Drawing.Size(28, 24)
+        Me.lbl_date_sale.Size = New System.Drawing.Size(34, 29)
         Me.lbl_date_sale.TabIndex = 12
         Me.lbl_date_sale.Text = "..."
         '
@@ -251,9 +271,10 @@ Partial Class frm_coffeeSale
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label6.Location = New System.Drawing.Point(309, 142)
+        Me.Label6.Location = New System.Drawing.Point(412, 175)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(149, 24)
+        Me.Label6.Size = New System.Drawing.Size(189, 29)
         Me.Label6.TabIndex = 11
         Me.Label6.Text = "วัน/เดือน/ปี ที่ขาย"
         '
@@ -261,18 +282,21 @@ Partial Class frm_coffeeSale
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label4.Location = New System.Drawing.Point(7, 142)
+        Me.Label4.Location = New System.Drawing.Point(9, 175)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(102, 24)
+        Me.Label4.Size = New System.Drawing.Size(134, 29)
         Me.Label4.TabIndex = 9
         Me.Label4.Text = "รหัสการขาย"
         '
         'btn_add
         '
+        Me.btn_add.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_add.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.btn_add.Location = New System.Drawing.Point(578, 85)
+        Me.btn_add.Location = New System.Drawing.Point(771, 105)
+        Me.btn_add.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btn_add.Name = "btn_add"
-        Me.btn_add.Size = New System.Drawing.Size(63, 26)
+        Me.btn_add.Size = New System.Drawing.Size(84, 32)
         Me.btn_add.TabIndex = 8
         Me.btn_add.Text = "เพิ่ม"
         Me.btn_add.UseVisualStyleBackColor = True
@@ -281,9 +305,10 @@ Partial Class frm_coffeeSale
         '
         Me.rad_cool.AutoSize = True
         Me.rad_cool.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.rad_cool.Location = New System.Drawing.Point(480, 86)
+        Me.rad_cool.Location = New System.Drawing.Point(640, 106)
+        Me.rad_cool.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rad_cool.Name = "rad_cool"
-        Me.rad_cool.Size = New System.Drawing.Size(50, 24)
+        Me.rad_cool.Size = New System.Drawing.Size(61, 29)
         Me.rad_cool.TabIndex = 7
         Me.rad_cool.Text = "เย็น"
         Me.rad_cool.UseVisualStyleBackColor = True
@@ -292,9 +317,10 @@ Partial Class frm_coffeeSale
         '
         Me.rad_spin.AutoSize = True
         Me.rad_spin.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.rad_spin.Location = New System.Drawing.Point(536, 86)
+        Me.rad_spin.Location = New System.Drawing.Point(715, 106)
+        Me.rad_spin.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rad_spin.Name = "rad_spin"
-        Me.rad_spin.Size = New System.Drawing.Size(45, 24)
+        Me.rad_spin.Size = New System.Drawing.Size(57, 29)
         Me.rad_spin.TabIndex = 6
         Me.rad_spin.Text = "ปั่น"
         Me.rad_spin.UseVisualStyleBackColor = True
@@ -304,9 +330,10 @@ Partial Class frm_coffeeSale
         Me.rad_hot.AutoSize = True
         Me.rad_hot.Checked = True
         Me.rad_hot.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.rad_hot.Location = New System.Drawing.Point(423, 86)
+        Me.rad_hot.Location = New System.Drawing.Point(564, 106)
+        Me.rad_hot.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rad_hot.Name = "rad_hot"
-        Me.rad_hot.Size = New System.Drawing.Size(51, 24)
+        Me.rad_hot.Size = New System.Drawing.Size(63, 29)
         Me.rad_hot.TabIndex = 5
         Me.rad_hot.TabStop = True
         Me.rad_hot.Text = "ร้อน"
@@ -315,59 +342,66 @@ Partial Class frm_coffeeSale
         'txt_coffee_amount
         '
         Me.txt_coffee_amount.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.txt_coffee_amount.Location = New System.Drawing.Point(313, 86)
+        Me.txt_coffee_amount.Location = New System.Drawing.Point(417, 106)
+        Me.txt_coffee_amount.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txt_coffee_amount.Name = "txt_coffee_amount"
-        Me.txt_coffee_amount.Size = New System.Drawing.Size(104, 38)
+        Me.txt_coffee_amount.Size = New System.Drawing.Size(137, 46)
         Me.txt_coffee_amount.TabIndex = 4
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label3.Location = New System.Drawing.Point(246, 92)
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.Label3.Location = New System.Drawing.Point(328, 113)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(61, 24)
+        Me.Label3.Size = New System.Drawing.Size(78, 29)
         Me.Label3.TabIndex = 3
         Me.Label3.Text = "จำนวน"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label2.Location = New System.Drawing.Point(7, 92)
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.Label2.Location = New System.Drawing.Point(9, 113)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(80, 24)
+        Me.Label2.Size = New System.Drawing.Size(106, 29)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "รหัสสินค้า"
         '
         'txt_coffee_id
         '
         Me.txt_coffee_id.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.txt_coffee_id.Location = New System.Drawing.Point(93, 86)
+        Me.txt_coffee_id.Location = New System.Drawing.Point(124, 106)
+        Me.txt_coffee_id.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txt_coffee_id.Name = "txt_coffee_id"
-        Me.txt_coffee_id.Size = New System.Drawing.Size(147, 38)
+        Me.txt_coffee_id.Size = New System.Drawing.Size(195, 46)
         Me.txt_coffee_id.TabIndex = 1
         '
         'txt_total
         '
-        Me.txt_total.BackColor = System.Drawing.Color.Lime
+        Me.txt_total.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.txt_total.Dock = System.Windows.Forms.DockStyle.Top
         Me.txt_total.Font = New System.Drawing.Font("Microsoft Sans Serif", 48.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.txt_total.Location = New System.Drawing.Point(0, 0)
+        Me.txt_total.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txt_total.Name = "txt_total"
-        Me.txt_total.Size = New System.Drawing.Size(660, 80)
+        Me.txt_total.Size = New System.Drawing.Size(880, 98)
         Me.txt_total.TabIndex = 0
         Me.txt_total.Text = "0.00"
         Me.txt_total.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'frm_coffeeSale
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1158, 738)
+        Me.ClientSize = New System.Drawing.Size(1544, 908)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel1)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "frm_coffeeSale"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "frm_coffeeSale"
         Me.Panel1.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)

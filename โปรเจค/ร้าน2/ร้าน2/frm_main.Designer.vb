@@ -22,6 +22,7 @@ Partial Class frm_main
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_main))
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
         Me.ToolStripButton6 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButton5 = New System.Windows.Forms.ToolStripButton()
@@ -44,17 +45,19 @@ Partial Class frm_main
         '
         'ToolStrip1
         '
+        Me.ToolStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton6, Me.ToolStripButton5, Me.ToolStripButton3, Me.ToolStripButton1})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.Size = New System.Drawing.Size(535, 133)
+        Me.ToolStrip1.Size = New System.Drawing.Size(713, 133)
         Me.ToolStrip1.TabIndex = 1
         Me.ToolStrip1.Text = "ขายกาแฟ"
         '
         'ToolStripButton6
         '
         Me.ToolStripButton6.AutoSize = False
-        Me.ToolStripButton6.Image = Global.ร้าน2.My.Resources.Resources.ห
+        Me.ToolStripButton6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.ToolStripButton6.Image = CType(resources.GetObject("ToolStripButton6.Image"), System.Drawing.Image)
         Me.ToolStripButton6.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.ToolStripButton6.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton6.Name = "ToolStripButton6"
@@ -65,7 +68,7 @@ Partial Class frm_main
         'ToolStripButton5
         '
         Me.ToolStripButton5.AutoSize = False
-        Me.ToolStripButton5.Image = Global.ร้าน2.My.Resources.Resources.index
+        Me.ToolStripButton5.Image = CType(resources.GetObject("ToolStripButton5.Image"), System.Drawing.Image)
         Me.ToolStripButton5.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.ToolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton5.Name = "ToolStripButton5"
@@ -76,7 +79,7 @@ Partial Class frm_main
         'ToolStripButton3
         '
         Me.ToolStripButton3.AutoSize = False
-        Me.ToolStripButton3.Image = Global.ร้าน2.My.Resources.Resources.f
+        Me.ToolStripButton3.Image = CType(resources.GetObject("ToolStripButton3.Image"), System.Drawing.Image)
         Me.ToolStripButton3.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.ToolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton3.Name = "ToolStripButton3"
@@ -87,7 +90,7 @@ Partial Class frm_main
         'ToolStripButton1
         '
         Me.ToolStripButton1.AutoSize = False
-        Me.ToolStripButton1.Image = Global.ร้าน2.My.Resources.Resources.x
+        Me.ToolStripButton1.Image = CType(resources.GetObject("ToolStripButton1.Image"), System.Drawing.Image)
         Me.ToolStripButton1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.ToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton1.Name = "ToolStripButton1"
@@ -97,17 +100,19 @@ Partial Class frm_main
         '
         'StatusStrip1
         '
+        Me.StatusStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripStatusLabel1, Me.lbl_username, Me.ToolStripStatusLabel3, Me.lbl_fullname, Me.ToolStripStatusLabel9, Me.lbl_tel, Me.ToolStripStatusLabel7, Me.lbl_email, Me.ToolStripStatusLabel5, Me.lbl_timelogin})
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 419)
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 514)
         Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(535, 22)
+        Me.StatusStrip1.Padding = New System.Windows.Forms.Padding(1, 0, 19, 0)
+        Me.StatusStrip1.Size = New System.Drawing.Size(713, 29)
         Me.StatusStrip1.TabIndex = 2
         Me.StatusStrip1.Text = "StatusStrip1"
         '
         'ToolStripStatusLabel1
         '
         Me.ToolStripStatusLabel1.Name = "ToolStripStatusLabel1"
-        Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(65, 17)
+        Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(80, 23)
         Me.ToolStripStatusLabel1.Text = "username :"
         '
         'lbl_username
@@ -115,13 +120,13 @@ Partial Class frm_main
         Me.lbl_username.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_username.ForeColor = System.Drawing.Color.Red
         Me.lbl_username.Name = "lbl_username"
-        Me.lbl_username.Size = New System.Drawing.Size(29, 17)
+        Me.lbl_username.Size = New System.Drawing.Size(37, 23)
         Me.lbl_username.Text = "xxx"
         '
         'ToolStripStatusLabel3
         '
         Me.ToolStripStatusLabel3.Name = "ToolStripStatusLabel3"
-        Me.ToolStripStatusLabel3.Size = New System.Drawing.Size(63, 17)
+        Me.ToolStripStatusLabel3.Size = New System.Drawing.Size(78, 23)
         Me.ToolStripStatusLabel3.Text = "full name :"
         '
         'lbl_fullname
@@ -129,13 +134,13 @@ Partial Class frm_main
         Me.lbl_fullname.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_fullname.ForeColor = System.Drawing.Color.Red
         Me.lbl_fullname.Name = "lbl_fullname"
-        Me.lbl_fullname.Size = New System.Drawing.Size(29, 17)
+        Me.lbl_fullname.Size = New System.Drawing.Size(37, 23)
         Me.lbl_fullname.Text = "xxx"
         '
         'ToolStripStatusLabel9
         '
         Me.ToolStripStatusLabel9.Name = "ToolStripStatusLabel9"
-        Me.ToolStripStatusLabel9.Size = New System.Drawing.Size(26, 17)
+        Me.ToolStripStatusLabel9.Size = New System.Drawing.Size(33, 23)
         Me.ToolStripStatusLabel9.Text = "tel :"
         '
         'lbl_tel
@@ -143,13 +148,13 @@ Partial Class frm_main
         Me.lbl_tel.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_tel.ForeColor = System.Drawing.Color.Red
         Me.lbl_tel.Name = "lbl_tel"
-        Me.lbl_tel.Size = New System.Drawing.Size(29, 17)
+        Me.lbl_tel.Size = New System.Drawing.Size(37, 23)
         Me.lbl_tel.Text = "xxx"
         '
         'ToolStripStatusLabel7
         '
         Me.ToolStripStatusLabel7.Name = "ToolStripStatusLabel7"
-        Me.ToolStripStatusLabel7.Size = New System.Drawing.Size(42, 17)
+        Me.ToolStripStatusLabel7.Size = New System.Drawing.Size(53, 23)
         Me.ToolStripStatusLabel7.Text = "email :"
         '
         'lbl_email
@@ -157,13 +162,13 @@ Partial Class frm_main
         Me.lbl_email.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_email.ForeColor = System.Drawing.Color.Red
         Me.lbl_email.Name = "lbl_email"
-        Me.lbl_email.Size = New System.Drawing.Size(29, 17)
+        Me.lbl_email.Size = New System.Drawing.Size(37, 23)
         Me.lbl_email.Text = "xxx"
         '
         'ToolStripStatusLabel5
         '
         Me.ToolStripStatusLabel5.Name = "ToolStripStatusLabel5"
-        Me.ToolStripStatusLabel5.Size = New System.Drawing.Size(67, 17)
+        Me.ToolStripStatusLabel5.Size = New System.Drawing.Size(84, 23)
         Me.ToolStripStatusLabel5.Text = "time login :"
         '
         'lbl_timelogin
@@ -171,18 +176,20 @@ Partial Class frm_main
         Me.lbl_timelogin.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_timelogin.ForeColor = System.Drawing.Color.Red
         Me.lbl_timelogin.Name = "lbl_timelogin"
-        Me.lbl_timelogin.Size = New System.Drawing.Size(29, 17)
+        Me.lbl_timelogin.Size = New System.Drawing.Size(37, 23)
         Me.lbl_timelogin.Text = "xxx"
         '
         'frm_main
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(535, 441)
+        Me.ClientSize = New System.Drawing.Size(713, 543)
         Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.ToolStrip1)
         Me.IsMdiContainer = True
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "frm_main"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "frm_main"
         Me.ToolStrip1.ResumeLayout(False)
         Me.ToolStrip1.PerformLayout()

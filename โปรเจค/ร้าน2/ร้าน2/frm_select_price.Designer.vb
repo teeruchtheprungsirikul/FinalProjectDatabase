@@ -22,6 +22,7 @@ Partial Class frm_select_price
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_select_price))
         Me.rad_hot = New System.Windows.Forms.RadioButton()
         Me.rad_cool = New System.Windows.Forms.RadioButton()
         Me.rad_spin = New System.Windows.Forms.RadioButton()
@@ -37,15 +38,17 @@ Partial Class frm_select_price
         Me.Label6 = New System.Windows.Forms.Label()
         Me.txt_amount = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'rad_hot
         '
         Me.rad_hot.AutoSize = True
-        Me.rad_hot.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.rad_hot.Location = New System.Drawing.Point(59, 65)
+        Me.rad_hot.Font = New System.Drawing.Font("Microsoft JhengHei UI", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rad_hot.Location = New System.Drawing.Point(65, 140)
+        Me.rad_hot.Margin = New System.Windows.Forms.Padding(4)
         Me.rad_hot.Name = "rad_hot"
-        Me.rad_hot.Size = New System.Drawing.Size(76, 33)
+        Me.rad_hot.Size = New System.Drawing.Size(78, 42)
         Me.rad_hot.TabIndex = 0
         Me.rad_hot.TabStop = True
         Me.rad_hot.Text = "ร้อน"
@@ -54,10 +57,11 @@ Partial Class frm_select_price
         'rad_cool
         '
         Me.rad_cool.AutoSize = True
-        Me.rad_cool.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.rad_cool.Location = New System.Drawing.Point(59, 124)
+        Me.rad_cool.Font = New System.Drawing.Font("Microsoft JhengHei UI", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rad_cool.Location = New System.Drawing.Point(65, 229)
+        Me.rad_cool.Margin = New System.Windows.Forms.Padding(4)
         Me.rad_cool.Name = "rad_cool"
-        Me.rad_cool.Size = New System.Drawing.Size(71, 33)
+        Me.rad_cool.Size = New System.Drawing.Size(74, 42)
         Me.rad_cool.TabIndex = 1
         Me.rad_cool.TabStop = True
         Me.rad_cool.Text = "เย็น"
@@ -66,10 +70,11 @@ Partial Class frm_select_price
         'rad_spin
         '
         Me.rad_spin.AutoSize = True
-        Me.rad_spin.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.rad_spin.Location = New System.Drawing.Point(59, 195)
+        Me.rad_spin.Font = New System.Drawing.Font("Microsoft JhengHei UI", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rad_spin.Location = New System.Drawing.Point(67, 319)
+        Me.rad_spin.Margin = New System.Windows.Forms.Padding(4)
         Me.rad_spin.Name = "rad_spin"
-        Me.rad_spin.Size = New System.Drawing.Size(63, 33)
+        Me.rad_spin.Size = New System.Drawing.Size(68, 42)
         Me.rad_spin.TabIndex = 2
         Me.rad_spin.TabStop = True
         Me.rad_spin.Text = "ปั่น"
@@ -79,9 +84,10 @@ Partial Class frm_select_price
         '
         Me.lbl_hot.AutoSize = True
         Me.lbl_hot.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.lbl_hot.Location = New System.Drawing.Point(194, 67)
+        Me.lbl_hot.Location = New System.Drawing.Point(310, 140)
+        Me.lbl_hot.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lbl_hot.Name = "lbl_hot"
-        Me.lbl_hot.Size = New System.Drawing.Size(29, 31)
+        Me.lbl_hot.Size = New System.Drawing.Size(36, 39)
         Me.lbl_hot.TabIndex = 3
         Me.lbl_hot.Text = "0"
         '
@@ -89,9 +95,10 @@ Partial Class frm_select_price
         '
         Me.lbl_cool.AutoSize = True
         Me.lbl_cool.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.lbl_cool.Location = New System.Drawing.Point(194, 126)
+        Me.lbl_cool.Location = New System.Drawing.Point(310, 218)
+        Me.lbl_cool.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lbl_cool.Name = "lbl_cool"
-        Me.lbl_cool.Size = New System.Drawing.Size(29, 31)
+        Me.lbl_cool.Size = New System.Drawing.Size(36, 39)
         Me.lbl_cool.TabIndex = 4
         Me.lbl_cool.Text = "0"
         '
@@ -99,18 +106,21 @@ Partial Class frm_select_price
         '
         Me.lbl_spin.AutoSize = True
         Me.lbl_spin.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.lbl_spin.Location = New System.Drawing.Point(194, 197)
+        Me.lbl_spin.Location = New System.Drawing.Point(310, 319)
+        Me.lbl_spin.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lbl_spin.Name = "lbl_spin"
-        Me.lbl_spin.Size = New System.Drawing.Size(29, 31)
+        Me.lbl_spin.Size = New System.Drawing.Size(36, 39)
         Me.lbl_spin.TabIndex = 5
         Me.lbl_spin.Text = "0"
         '
         'btn_select
         '
-        Me.btn_select.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.btn_select.Location = New System.Drawing.Point(12, 384)
+        Me.btn_select.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_select.Font = New System.Drawing.Font("Microsoft JhengHei UI", 19.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_select.Location = New System.Drawing.Point(35, 509)
+        Me.btn_select.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_select.Name = "btn_select"
-        Me.btn_select.Size = New System.Drawing.Size(123, 67)
+        Me.btn_select.Size = New System.Drawing.Size(136, 55)
         Me.btn_select.TabIndex = 6
         Me.btn_select.Text = "เลือก"
         Me.btn_select.UseVisualStyleBackColor = True
@@ -118,81 +128,106 @@ Partial Class frm_select_price
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(34, 9)
+        Me.Label1.Font = New System.Drawing.Font("Microsoft PhagsPa", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(57, 33)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(26, 13)
+        Me.Label1.Size = New System.Drawing.Size(36, 20)
         Me.Label1.TabIndex = 7
         Me.Label1.Text = "รหัส"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(34, 34)
+        Me.Label3.Font = New System.Drawing.Font("Microsoft PhagsPa", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(57, 74)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(43, 13)
+        Me.Label3.Size = New System.Drawing.Size(59, 20)
         Me.Label3.TabIndex = 9
         Me.Label3.Text = "รายการ"
         '
         'lbl_coffee_id
         '
         Me.lbl_coffee_id.AutoSize = True
-        Me.lbl_coffee_id.Location = New System.Drawing.Point(125, 9)
+        Me.lbl_coffee_id.Location = New System.Drawing.Point(133, 36)
+        Me.lbl_coffee_id.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lbl_coffee_id.Name = "lbl_coffee_id"
-        Me.lbl_coffee_id.Size = New System.Drawing.Size(13, 13)
+        Me.lbl_coffee_id.Size = New System.Drawing.Size(16, 17)
         Me.lbl_coffee_id.TabIndex = 10
         Me.lbl_coffee_id.Text = "0"
         '
         'lbl_coffee_name
         '
         Me.lbl_coffee_name.AutoSize = True
-        Me.lbl_coffee_name.Location = New System.Drawing.Point(125, 34)
+        Me.lbl_coffee_name.Location = New System.Drawing.Point(133, 74)
+        Me.lbl_coffee_name.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lbl_coffee_name.Name = "lbl_coffee_name"
-        Me.lbl_coffee_name.Size = New System.Drawing.Size(13, 13)
+        Me.lbl_coffee_name.Size = New System.Drawing.Size(16, 17)
         Me.lbl_coffee_name.TabIndex = 11
         Me.lbl_coffee_name.Text = "0"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(56, 292)
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(57, 421)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(40, 13)
+        Me.Label5.Size = New System.Drawing.Size(54, 20)
         Me.Label5.TabIndex = 12
         Me.Label5.Text = "จำนวน"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(227, 292)
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(308, 421)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(28, 13)
+        Me.Label6.Size = New System.Drawing.Size(38, 20)
         Me.Label6.TabIndex = 13
         Me.Label6.Text = "แก้ว"
         '
         'txt_amount
         '
-        Me.txt_amount.Location = New System.Drawing.Point(102, 292)
+        Me.txt_amount.Location = New System.Drawing.Point(136, 419)
+        Me.txt_amount.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_amount.Name = "txt_amount"
-        Me.txt_amount.Size = New System.Drawing.Size(108, 20)
+        Me.txt_amount.Size = New System.Drawing.Size(143, 22)
         Me.txt_amount.TabIndex = 14
         '
         'Button1
         '
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Button1.Location = New System.Drawing.Point(163, 384)
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Microsoft JhengHei UI", 19.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(217, 509)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(123, 67)
+        Me.Button1.Size = New System.Drawing.Size(129, 55)
         Me.Button1.TabIndex = 15
         Me.Button1.Text = "ปิด"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'Button2
+        '
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Image = CType(resources.GetObject("Button2.Image"), System.Drawing.Image)
+        Me.Button2.Location = New System.Drawing.Point(394, 12)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(37, 31)
+        Me.Button2.TabIndex = 16
+        Me.Button2.UseVisualStyleBackColor = True
+        '
         'frm_select_price
         '
         Me.AcceptButton = Me.btn_select
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(332, 489)
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.ClientSize = New System.Drawing.Size(443, 602)
         Me.ControlBox = False
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.txt_amount)
         Me.Controls.Add(Me.Label6)
@@ -208,6 +243,8 @@ Partial Class frm_select_price
         Me.Controls.Add(Me.rad_spin)
         Me.Controls.Add(Me.rad_cool)
         Me.Controls.Add(Me.rad_hot)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "frm_select_price"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "เลือกราคา"
@@ -231,4 +268,5 @@ Partial Class frm_select_price
     Friend WithEvents Label6 As Label
     Friend WithEvents txt_amount As TextBox
     Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
 End Class

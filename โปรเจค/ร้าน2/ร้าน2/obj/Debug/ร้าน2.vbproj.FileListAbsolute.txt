@@ -47,3 +47,20 @@ C:\Users\Nitro 5\Desktop\โปรเจค\ร้าน2\ร้าน2\obj\Debu
 C:\Users\Nitro 5\Desktop\โปรเจค\ร้าน2\ร้าน2\obj\Debug\ร้าน2.frm_select_price.resources
 C:\Users\Nitro 5\Desktop\โปรเจค\ร้าน2\ร้าน2\obj\Debug\ร้าน2.frm_total.resources
 C:\Users\Nitro 5\Desktop\โปรเจค\ร้าน2\ร้าน2\obj\Debug\ร้าน2.frm_users.resources
+D:\C#\FinalProjectDatabase-master\FinalProjectDatabase-master\โปรเจค\ร้าน2\ร้าน2\bin\Debug\ร้าน2.exe.config
+D:\C#\FinalProjectDatabase-master\FinalProjectDatabase-master\โปรเจค\ร้าน2\ร้าน2\bin\Debug\ร้าน2.exe
+D:\C#\FinalProjectDatabase-master\FinalProjectDatabase-master\โปรเจค\ร้าน2\ร้าน2\bin\Debug\ร้าน2.pdb
+D:\C#\FinalProjectDatabase-master\FinalProjectDatabase-master\โปรเจค\ร้าน2\ร้าน2\bin\Debug\ร้าน2.xml
+D:\C#\FinalProjectDatabase-master\FinalProjectDatabase-master\โปรเจค\ร้าน2\ร้าน2\obj\Debug\ร้าน2.vbprojAssemblyReference.cache
+D:\C#\FinalProjectDatabase-master\FinalProjectDatabase-master\โปรเจค\ร้าน2\ร้าน2\obj\Debug\ร้าน2.Form1.resources
+D:\C#\FinalProjectDatabase-master\FinalProjectDatabase-master\โปรเจค\ร้าน2\ร้าน2\obj\Debug\ร้าน2.frm_coffeeSale.resources
+D:\C#\FinalProjectDatabase-master\FinalProjectDatabase-master\โปรเจค\ร้าน2\ร้าน2\obj\Debug\ร้าน2.frm_main.resources
+D:\C#\FinalProjectDatabase-master\FinalProjectDatabase-master\โปรเจค\ร้าน2\ร้าน2\obj\Debug\ร้าน2.frm_mannage_coffee.resources
+D:\C#\FinalProjectDatabase-master\FinalProjectDatabase-master\โปรเจค\ร้าน2\ร้าน2\obj\Debug\ร้าน2.frm_select_price.resources
+D:\C#\FinalProjectDatabase-master\FinalProjectDatabase-master\โปรเจค\ร้าน2\ร้าน2\obj\Debug\ร้าน2.frm_total.resources
+D:\C#\FinalProjectDatabase-master\FinalProjectDatabase-master\โปรเจค\ร้าน2\ร้าน2\obj\Debug\ร้าน2.frm_users.resources
+D:\C#\FinalProjectDatabase-master\FinalProjectDatabase-master\โปรเจค\ร้าน2\ร้าน2\obj\Debug\ร้าน2.Resources.resources
+D:\C#\FinalProjectDatabase-master\FinalProjectDatabase-master\โปรเจค\ร้าน2\ร้าน2\obj\Debug\ร้าน2.vbproj.GenerateResource.cache
+D:\C#\FinalProjectDatabase-master\FinalProjectDatabase-master\โปรเจค\ร้าน2\ร้าน2\obj\Debug\ร้าน2.exe
+D:\C#\FinalProjectDatabase-master\FinalProjectDatabase-master\โปรเจค\ร้าน2\ร้าน2\obj\Debug\ร้าน2.xml
+D:\C#\FinalProjectDatabase-master\FinalProjectDatabase-master\โปรเจค\ร้าน2\ร้าน2\obj\Debug\ร้าน2.pdb
